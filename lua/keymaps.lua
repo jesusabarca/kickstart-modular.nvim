@@ -51,4 +51,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Additional keymaps
+vim.keymap.set('n', '<leader>fs', '<cmd>w<CR>', { desc = 'Save current buffer' })
+vim.keymap.set('n', '<leader>fy', '<cmd>let @*=expand("%:p")<CR>', { desc = 'Copy file path' })
+vim.keymap.set('n', 'sg', '<cmd>vsplit<CR>', { desc = 'Vertical split' })
+vim.keymap.set('n', 'sv', '<cmd>split<CR>', { desc = 'Horizontal split' })
+vim.keymap.set('n', '<leader>q', 'q', { desc = 'Moves starting macro command' })
+vim.keymap.set('n', 'q', '<cmd>q<CR>', { desc = 'Quits current buffer' })
+
 -- vim: ts=2 sts=2 sw=2 et
