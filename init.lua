@@ -93,8 +93,10 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- Custom options
 vim.g.shiftwidth = 2
 vim.g.expandtab = true
+vim.g.tpipeline_statusline = '%!tpipeline#stl#line()'
 
 -- [[ Setting options ]]
 require 'options'
